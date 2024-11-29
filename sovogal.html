@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPA Vowel Chart</title>
+    <link rel="stylesheet" href="./css/sovogal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">MeuSite</div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            <ul class="menu-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="./tutorial.html">tutorial</a></li>
+                <li><a href="./menuFlashcards.html">menu flashcards</a></li>
+                <li><a href="./creditos.html    ">creditos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Context Menu -->
+    <div id="context-menu"
+        style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; border-radius: 5px; z-index: 1000;">
+        <ul style="list-style: none; margin: 0; padding: 10px; cursor: pointer;">
+            <div id="clicked-symbol" class="clicked-symbol"></div>
+            <li class="menu-item" data-action="play-sound">Reproduzir Som</li>
+            <li class="menu-item" data-action="view-info">Ver Informações</li>
+            <li class="menu-item" data-action="view-animation">Ver Animação</li>
+            <!-- Submenu para informações -->
+            <div id="info-submenu" class="submenu" style="display: none; padding: 10px; border-top: 1px solid #ccc;">
+                <p>Informações sobre o som:</p>
+                <p id="info-content"></p>
+            </div>
+            <!-- Submenu para animações -->
+            <div id="animation-submenu" class="submenu"
+                style="display: none; padding: 10px; border-top: 1px solid #ccc;">
+                <p>Animação:</p>
+                <div id="animation-content">[Insira a animação ou GIF aqui]</div>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Vowels</h2>
+            <p class="caption">Where symbols appear in pairs, the one to the right represents a rounded vowel.</p>
+            <div class="voweloverflow">
+                <div class="vowels">
+                    <img src="./imagens//Blank_vowel_trapezoid-transformed.png" class="trapezoid"
+                        alt="Vowel Trapezoid" />
+
+                    <!-- Labels -->
+                    <div class="l front">Front</div>
+                    <div class="l central">Central</div>
+                    <div class="l back">Back</div>
+                    <div class="l close">Close</div>
+                    <div class="l closemid">Close-mid</div>
+                    <div class="l openmid">Open-mid</div>
+                    <div class="l open">Open</div>
+
+                    <!-- Context Menu -->
+
+
+
+
+                    <!-- Vowels -->
+                    <div class="v close_front">
+                        <span class="interactive IPA" onclick="playSound('Close_front_unrounded_vowel')">i</span>
+                        <span class="interactive IPA" onclick="playSound('Close_front_rounded_vowel')">y</span>
+                    </div>
+                    <div class="v close_central">
+                        <span class="interactive IPA" onclick="playSound('Close_central_unrounded_vowel')">ɨ</span>
+                        <span class="interactive IPA" onclick="playSound('Close_central_rounded_vowel')">ʉ</span>
+                    </div>
+                    <div class="v close_back">
+                        <span class="interactive IPA" onclick="playSound('Close_back_unrounded_vowel')">ɯ</span>
+                        <span class="interactive IPA" onclick="playSound('Close_back_rounded_vowel')">u</span>
+                    </div>
+                    <div class="v nearclose_nearfront">
+                        <span class="interactive IPA"
+                            onclick="playSound('Near-close_near-front_unrounded_vowel')">ɪ</span>
+                        <span class="interactive IPA"
+                            onclick="playSound('Near-close_near-front_rounded_vowel')">ʏ</span>
+                    </div>
+                    <div class="v nearclose_nearback">
+                        <span class="interactive IPA" onclick="playSound('Near-close_near-back_rounded_vowel')">ʊ</span>
+                    </div>
+                    <div class="v closemid_front">
+                        <span class="interactive IPA" onclick="playSound('Close-mid_front_unrounded_vowel')">e</span>
+                        <span class="interactive IPA" onclick="playSound('Close-mid_front_rounded_vowel')">ø</span>
+                    </div>
+                    <div class="v closemid_central">
+                        <span class="interactive IPA" onclick="playSound('Close-mid_central_unrounded_vowel')">ɘ</span>
+                        <span class="interactive IPA" onclick="playSound('Close-mid_central_rounded_vowel')">ɵ</span>
+                    </div>
+                    <div class="v closemid_back">
+                        <span class="interactive IPA" onclick="playSound('Close-mid_back_unrounded_vowel')">ɤ</span>
+                        <span class="interactive IPA" onclick="playSound('Close-mid_back_rounded_vowel')">o</span>
+                    </div>
+                    <div class="v mid_central">
+                        <span class="interactive IPA" onclick="playSound('Mid-central_vowel')">ə</span>
+                    </div>
+                    <div class="v openmid_front">
+                        <span class="interactive IPA" onclick="playSound('Open-mid_front_unrounded_vowel')">ɛ</span>
+                        <span class="interactive IPA" onclick="playSound('Open-mid_front_rounded_vowel')">œ</span>
+                    </div>
+                    <div class="v openmid_central">
+                        <span class="interactive IPA" onclick="playSound('Open-mid_central_unrounded_vowel')">ɜ</span>
+                        <span class="interactive IPA" onclick="playSound('Open-mid_central_rounded_vowel')">ɞ</span>
+                    </div>
+                    <div class="v openmid_back">
+                        <span class="interactive IPA" onclick="playSound('Open-mid_back_unrounded_vowel')">ʌ</span>
+                        <span class="interactive IPA" onclick="playSound('Open-mid_back_rounded_vowel')">ɔ</span>
+                    </div>
+                    <div class="v nearopen_front">
+                        <span class="interactive IPA" onclick="playSound('Near-open_front_unrounded_vowel')">æ</span>
+                    </div>
+                    <div class="v nearopen_central">
+                        <span class="interactive IPA" onclick="playSound('Near-open_central_unrounded_vowel')">ɐ</span>
+                    </div>
+                    <div class="v open_front">
+                        <span class="interactive IPA" onclick="playSound('Open_front_unrounded_vowel')">a</span>
+                        <span class="interactive IPA" onclick="playSound('Open_front_rounded_vowel')">ɶ</span>
+                    </div>
+                    <div class="v open_back">
+                        <span class="interactive IPA" onclick="playSound('Open_back_unrounded_vowel')">ɑ</span>
+                        <span class="interactive IPA" onclick="playSound('Open_back_rounded_vowel')">ɒ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <caption>Tabela Moderna com Alternância de Cores por Coluna</caption>
+            <table class="ipa-table">
+                <thead>
+                    <tr>
+                        <th></th> <!-- Espaço reservado para as labels das linhas -->
+                        <th colspan="2">Bilabial</th>
+                        <th colspan="2">Labiodental</th>
+                        <th colspan="2">Dental</th>
+                        <th colspan="2">Alveolar</th>
+                        <th colspan="2">Postalveolar</th>
+                        <th colspan="2">Retroflex</th>
+                        <th colspan="2">Palatal</th>
+                        <th colspan="2">Velar</th>
+                        <th colspan="2">Uvular</th>
+                        <th colspan="2">Pharyngeal</th>
+                        <th colspan="2">Glottal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas -->
+                    <tr>
+    <th>Plosive</th>
+    <td class="interactive symbol"><span class="ipa-symbol">p</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">b</span></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">t</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">d</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʈ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɖ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">c</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɟ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">k</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">g</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">q</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɢ</span></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʔ</span></td>
+    <td></td>
+</tr>
+<tr>
+    <th>Nasal</th>
+    <td class="interactive symbol"><span class="ipa-symbol">m</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɱ</span></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">n</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɳ</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɲ</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ŋ</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɴ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>Trill</th>
+    <td class="interactive symbol"><span class="ipa-symbol">ʙ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">r</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɽ</span></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʀ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>Tap/Flap</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɾ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɽ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>Fricative</th>
+    <td class="interactive symbol"><span class="ipa-symbol">ɸ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">β</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">f</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">v</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">θ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ð</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">s</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">z</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʃ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʒ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʂ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʐ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ç</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʝ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">x</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɣ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">χ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʁ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ħ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʕ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">h</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɦ</span></td>
+</tr>
+<tr>
+    <th>Lateral Fricative</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɬ</span></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɮ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>Approximant</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɹ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɻ</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">j</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɰ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>Lateral Approximant</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="roxo interactive"><span class="ipa-symbol">l</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ɭ</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʎ</span></td>
+    <td></td>
+    <td class="interactive symbol"><span class="ipa-symbol">ʟ</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+                    </thead>
+            </table>
+
+        </section>
+        <section>
+            <h2>IPA Symbols</h2>
+            <table class="ipa-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">CLICKS, VOICED IMPLOSIVES & EJECTIVES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʘ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɓ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">pʼ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ǀ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɗ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">tʼ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ǃ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʄ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">kʼ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ǂ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɠ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">sʼ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ǁ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʛ</span>
+                        </td>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʼ</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Outros Símbolos e Marcas</h2>
+            <!-- Outros Símbolos -->
+            <table class="ipa-table">
+                <caption>Outros Símbolos</caption>
+                <thead>
+                    <tr>
+                        <th>Símbolo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʍ</span>
+                        </td>
+                        <td>Fricativa labiovelar surda</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">w</span>
+                        </td>
+                        <td>Aproximante labiovelar sonora</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɥ</span>
+                        </td>
+                        <td>Aproximante labial-palatal sonora</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʜ</span>
+                        </td>
+                        <td>Fricativa epiglotal surda</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʢ</span>
+                        </td>
+                        <td>Fricativa epiglotal sonora</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʡ</span>
+                        </td>
+                        <td>Oclusiva epiglotal</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɕ</span>
+                        </td>
+                        <td>Fricativa alveolopalatal surda</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ʑ</span>
+                        </td>
+                        <td>Fricativa alveolopalatal sonora</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɺ</span>
+                        </td>
+                        <td>Flape lateral alveolar</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ɧ</span>
+                        </td>
+                        <td>Simultânea ʃ e x</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <!-- Diacríticos -->
+            <table class="ipa-table">
+                <caption>Diacríticos</caption>
+                <thead>
+                    <tr>
+                        <th>Símbolo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̥</span>
+                        </td>
+                        <td>Desvozeado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̬</span>
+                        </td>
+                        <td>Vozeado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌ʰ</span>
+                        </td>
+                        <td>Aspirado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̹</span>
+                        </td>
+                        <td>Mais arredondado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̜</span>
+                        </td>
+                        <td>Menos arredondado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̟</span>
+                        </td>
+                        <td>Avançado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̠</span>
+                        </td>
+                        <td>Retrógrado</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">◌̃</span>
+                        </td>
+                        <td>Nasalizado</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <!-- Suprassegmentais -->
+            <table class="ipa-table">
+                <caption>Suprassegmentais</caption>
+                <thead>
+                    <tr>
+                        <th>Símbolo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ˈ</span>
+                        </td>
+                        <td>Acento principal</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ˌ</span>
+                        </td>
+                        <td>Acento secundário</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">ː</span>
+                        </td>
+                        <td>Som longo</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">‿</span>
+                        </td>
+                        <td>Ligação</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <!-- Tons e Acentos -->
+            <table class="ipa-table">
+                <caption>Tons e Acentos</caption>
+                <thead>
+                    <tr>
+                        <th>Símbolo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">˥</span>
+                        </td>
+                        <td>Tom alto</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">˩</span>
+                        </td>
+                        <td>Tom baixo</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">˧</span>
+                        </td>
+                        <td>Tom médio</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">˦˥</span>
+                        </td>
+                        <td>Subida de tom</td>
+                    </tr>
+                    <tr>
+                        <td class="interactive symbol">
+                            <span class="ipa-symbol">˩˨</span>
+                        </td>
+                        <td>Descida de tom</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MeuSite. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="#privacy">Política de Privacidade</a></li>
+            <li><a href="#terms">Termos de Uso</a></li>
+        </ul>
+    </footer>
+    <script src="./script/sovogal.js"></script>
+    <script>
+        function playSound(soundName) {
+            const audio = new Audio(`${soundName}.mp3`);
+            audio.play().catch(err => console.error(`Error playing sound: ${err}`));
+        }
+    </script>
+
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

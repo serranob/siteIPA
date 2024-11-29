@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Flashcards</title>
+    <link rel="stylesheet" href="./menuFlashcards.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seleção de Flashcards</h1>
+
+        <!-- Primeira Seção: Criar Nova Lista -->
+        <section class="create-section">
+            <h2>Seus Flashcards</h2>
+            <div class="flashcard-grid create-grid">
+                <div class="flashcard-item add-list" id="addNewListBtn">
+                    <span class="add-symbol">+</span>
+                    <p>Criar Nova Lista</p>
+                </div>
+                
+                <!-- Outros blocos vazios para criar novas listas (menores) -->
+                <div class="flashcard-item empty" id="empty1"></div>
+                <div class="flashcard-item empty" id="empty2"></div>
+                <div class="flashcard-item empty" id="empty3"></div>
+                <div class="flashcard-item empty" id="empty4"></div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Segunda Seção: Flashcards Criados -->
+        <section class="created-section">
+            <h2>Flashcards Básicos</h2>
+            <div class="flashcard-grid create-grid">
+                <div class="flashcard-item created-card" id="list1" data-list-id="1">
+                    <h2>Lista 1</h2>
+                    <p>5 Flashcards</p>
+                </div>
+                <div class="flashcard-item created-card" id="list2" data-list-id="2">
+                    <h2>Lista 2</h2>
+                    <p>3 Flashcards</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para criar nova lista de Flashcards -->
+        <div id="createListModal" class="modal">
+            <div class="modal-content">
+                <h2>Criar Nova Lista</h2>
+                <input type="text" id="listName" placeholder="Nome da Lista">
+                <button id="saveList">Salvar Lista</button>
+                <button id="closeModal">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Flashcards</title>
+    <link rel="stylesheet" href="./listPage.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <button id="backBtn" class="back-button">Voltar</button>
+
+            <h1 id="listTitle">Minha Lista</h1>
+            <!-- Botão de Voltar no Header -->
+        </header>
+
+
+        <div class="actions">
+            <button id="createFlashcardBtn" class="action-btn">Criar Flashcard</button>
+            <button id="studyFlashcardsBtn" class="action-btn">Estudar Flashcards</button>
+            <script>
+                document.getElementById("studyFlashcardsBtn").addEventListener("click", () => {
+                    window.location.href = "estudar.html";
+                });
+            </script>
+        </div>
+
+        <section class="flashcard-list">
+            <h2>Flashcards</h2>
+            <div id="flashcardsContainer">
+                <!-- Flashcards existentes serão adicionados aqui -->
+                <p id="placeholder">Nenhum flashcard encontrado. Clique em "Criar Flashcard" para começar!</p>
+            </div>
+        </section>
+
+        <!-- Modal para criação/edição de flashcards -->
+        <div id="flashcardModal" class="modal">
+            <div class="modal-content">
+                <h2 id="modalTitle">Criar Flashcard</h2>
+                <input type="text" id="flashcardFront" placeholder="Frente do Flashcard">
+                <input type="text" id="flashcardBack" placeholder="Verso do Flashcard">
+                <button id="saveFlashcardBtn">Salvar</button>
+                <button id="closeModalBtn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./listPage.js"></script>
+</body>
+
+</html>

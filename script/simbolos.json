@@ -1,0 +1,163 @@
+// varios sons errados em alguns exemplos
+[
+    {
+        "symbol": "i",
+        "sound": "./sons/i.mp3",
+        "examples": {
+            "portuguese": ["vivo", "riso", "mim"],
+            "english": ["see", "be", "tree"]
+        }
+    },
+    {
+        "symbol": "ɪ",
+        "sound": "./sons/ɪ.mp3",
+        "examples": {
+            "portuguese": ["fim", "sítio", "música"],
+            "english": ["sit", "bit", "hit"]
+        }
+    },
+    {
+        "symbol": "e",
+        "sound": "./sons/e.mp3",
+        "examples": {
+            "portuguese": ["pé", "mês", "leite"],
+            "english": ["bed", "red", "led"]
+        }
+    },
+    {
+        "symbol": "ɛ",
+        "sound": "./sons/ɛ.mp3",
+        "examples": {
+            "portuguese": ["mãe", "pá", "café"],
+            "english": ["cat", "mat", "bat"]
+        }
+    },
+    {
+        "symbol": "æ",
+        "sound": "./sons/æ.mp3",
+        "examples": {
+            "portuguese": ["café", "saco", "lago"],
+            "english": ["hat", "map", "man"]
+        }
+    },
+    {
+        "symbol": "ɑ",
+        "sound": "./sons/ɑ.mp3",
+        "examples": {
+            "portuguese": ["pato", "sapo", "cavalo"],
+            "english": ["father", "car", "star"]
+        }
+    },
+    {
+        "symbol": "ɒ",
+        "sound": "./sons/ɒ.mp3",
+        "examples": {
+            "portuguese": ["pó", "olho", "morro"],
+            "english": ["dog", "hot", "cot"]
+        }
+    },
+    {
+        "symbol": "ɔ",
+        "sound": "./sons/ɔ.mp3",
+        "examples": {
+            "portuguese": ["bola", "fogo", "lobo"],
+            "english": ["saw", "law", "draw"]
+        }
+    },
+    {
+        "symbol": "o",
+        "sound": "./sons/o.mp3",
+        "examples": {
+            "portuguese": ["sol", "bola", "volta"],
+            "english": ["go", "show", "no"]
+        }
+    },
+    {
+        "symbol": "ʊ",
+        "sound": "./sons/ʊ.mp3",
+        "examples": {
+            "portuguese": ["tubo", "pudim", "burro"],
+            "english": ["put", "foot", "book"]
+        }
+    },
+    {
+        "symbol": "u",
+        "sound": "./sons/u.mp3",
+        "examples": {
+            "portuguese": ["luz", "tudo", "pulo"],
+            "english": ["boot", "food", "mood"]
+        }
+    },
+    {
+        "symbol": "ʌ",
+        "sound": "./sons/ʌ.mp3",
+        "examples": {
+            "portuguese": ["copo", "mãe", "fato"],
+            "english": ["cup", "luck", "hut"]
+        }
+    },
+    {
+        "symbol": "ɜː",
+        "sound": "./sons/ɜː.mp3",
+        "examples": {
+            "portuguese": ["corpo", "porta", "morte"],
+            "english": ["bird", "word", "curb"]
+        }
+    },
+    {
+        "symbol": "ə",
+        "sound": "./sons/ə.mp3",
+        "examples": {
+            "portuguese": ["sofá", "banana", "abacaxi"],
+            "english": ["sofa", "banana", "ago"]
+        }
+    },
+    {
+        "symbol": "ɪə",
+        "sound": "./sons/ɪə.mp3",
+        "examples": {
+            "portuguese": ["pé", "mãe", "você"],
+            "english": ["ear", "near", "clear"]
+        }
+    },
+    {
+        "symbol": "eə",
+        "sound": "./sons/eə.mp3",
+        "examples": {
+            "portuguese": ["peixe", "leite", "feixe"],
+            "english": ["air", "care", "fair"]
+        }
+    },
+    {
+        "symbol": "ʊə",
+        "sound": "./sons/ʊə.mp3",
+        "examples": {
+            "portuguese": ["turista", "seguro", "duro"],
+            "english": ["tour", "pure", "sure"]
+        }
+    },
+    {
+        "symbol": "aɪ",
+        "sound": "./sons/aɪ.mp3",
+        "examples": {
+            "portuguese": ["pai", "caio", "maio"],
+            "english": ["my", "high", "fly"]
+        }
+    },
+    {
+        "symbol": "aʊ",
+        "sound": "./sons/aʊ.mp3",
+        "examples": {
+            "portuguese": ["cão", "pão", "mão"],
+            "english": ["how", "out", "about"]
+        }
+    },
+    {
+        "symbol": "ɔɪ",
+        "sound": "./sons/ɔɪ.mp3",
+        "examples": {
+            "portuguese": ["oi", "boi", "foi"],
+            "english": ["boy", "toy", "joy"]
+        }
+    }
+]

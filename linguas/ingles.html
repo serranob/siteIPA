@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPA Vowel Chart</title>
+    <link rel="stylesheet" href="./sovogal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">MeuSite</div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            <ul class="menu-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="./flashcards.html">flashcards</a></li>
+                <li><a href="./menuFlashcards.html">menu flashcards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home" class="hero">
+            <h1>Bem-vindo ao Meu Site Moderno</h1>
+            <p>Explore a simplicidade e funcionalidade com design responsivo!</p>
+        </section>
+        <section>
+            <h2>Vowels</h2>
+            <p class="caption">Where symbols appear in pairs, the one to the right represents a rounded vowel.</p>
+            <div class="voweloverflow">
+                <div class="vowels">
+                    <img src="./Blank_vowel_trapezoid-transformed.png" class="trapezoid" alt="Vowel Trapezoid" />
+
+                    <!-- Labels -->
+                    <div class="l front">Front</div>
+                    <div class="l central">Central</div>
+                    <div class="l back">Back</div>
+                    <div class="l close">Close</div>
+                    <div class="l closemid">Close-mid</div>
+                    <div class="l openmid">Open-mid</div>
+                    <div class="l open">Open</div>
+
+                    <!-- Vowels -->
+                    <div class="v close_front">
+                        <span class="interactive IPA" onclick="playSound('Close_front_unrounded_vowel')">i</span>
+                        <span class="interactive IPA" onclick="playSound('Close_front_rounded_vowel')">y</span>
+                    </div>
+                    <div class="v close_central">
+                        <span class="interactive IPA" onclick="playSound('Close_central_unrounded_vowel')">ɨ</span>
+                        <span class="interactive IPA" onclick="playSound('Close_central_rounded_vowel')">ʉ</span>
+                    </div>
+                    <div class="v close_back">
+                        <span class="interactive IPA" onclick="playSound('Close_back_unrounded_vowel')">ɯ</span>
+                        <span class="interactive IPA" onclick="playSound('Close_back_rounded_vowel')">u</span>
+                    </div>
+                    <div class="v nearclose_nearfront">
+                        <span class="interactive IPA"
+                            onclick="playSound('Near-close_near-front_unrounded_vowel')">ɪ</span>
+                        <span class="interactive IPA"
+                            onclick="playSound('Near-close_near-front_rounded_vowel')">ʏ</span>
+                    </div>
+                    <div class="v nearclose_nearback">
+                        <span class="interactive IPA" onclick="playSound('Near-close_near-back_rounded_vowel')">ʊ</span>
+                    </div>
+                    <div class="v closemid_front">
+                        <span class="interactive IPA" onclick="playSound('Close-mid_front_unrounded_vowel')">e</span>
+                        <span class="interactive IPA" onclick="playSound('Close-mid_front_rounded_vowel')">ø</span>
+                    </div>
+                    <div class="v closemid_central">
+                        <span class="interactive IPA" onclick="playSound('Close-mid_central_unrounded_vowel')">ɘ</span>
+                        <span class="interactive IPA" onclick="playSound('Close-mid_central_rounded_vowel')">ɵ</span>
+                    </div>
+                    <div class="v closemid_back">
+                        <span class="interactive IPA" onclick="playSound('Close-mid_back_unrounded_vowel')">ɤ</span>
+                        <span class="interactive IPA" onclick="playSound('Close-mid_back_rounded_vowel')">o</span>
+                    </div>
+                    <div class="v mid_central">
+                        <span class="interactive IPA" onclick="playSound('Mid-central_vowel')">ə</span>
+                    </div>
+                    <div class="v openmid_front">
+                        <span class="interactive IPA" onclick="playSound('Open-mid_front_unrounded_vowel')">ɛ</span>
+                        <span class="interactive IPA" onclick="playSound('Open-mid_front_rounded_vowel')">œ</span>
+                    </div>
+                    <div class="v openmid_central">
+                        <span class="interactive IPA" onclick="playSound('Open-mid_central_unrounded_vowel')">ɜ</span>
+                        <span class="interactive IPA" onclick="playSound('Open-mid_central_rounded_vowel')">ɞ</span>
+                    </div>
+                    <div class="v openmid_back">
+                        <span class="interactive IPA" onclick="playSound('Open-mid_back_unrounded_vowel')">ʌ</span>
+                        <span class="interactive IPA" onclick="playSound('Open-mid_back_rounded_vowel')">ɔ</span>
+                    </div>
+                    <div class="v nearopen_front">
+                        <span class="interactive IPA" onclick="playSound('Near-open_front_unrounded_vowel')">æ</span>
+                    </div>
+                    <div class="v nearopen_central">
+                        <span class="interactive IPA" onclick="playSound('Near-open_central_unrounded_vowel')">ɐ</span>
+                    </div>
+                    <div class="v open_front">
+                        <span class="interactive IPA" onclick="playSound('Open_front_unrounded_vowel')">a</span>
+                        <span class="interactive IPA" onclick="playSound('Open_front_rounded_vowel')">ɶ</span>
+                    </div>
+                    <div class="v open_back">
+                        <span class="interactive IPA" onclick="playSound('Open_back_unrounded_vowel')">ɑ</span>
+                        <span class="interactive IPA" onclick="playSound('Open_back_rounded_vowel')">ɒ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <table>
+                <caption>Tabela Moderna com Alternância de Cores por Coluna</caption>
+                <thead>
+                    <tr>
+                        <th></th> <!-- Espaço reservado para as labels das linhas -->
+                        <th colspan="2">Label 1-2</th>
+                        <th colspan="2">Label 3-4</th>
+                        <th colspan="2">Label 5-6</th>
+                        <th colspan="2">Label 7-8</th>
+                        <th colspan="2">Label 9-10</th>
+                        <th colspan="2">Label 11-12</th>
+                        <th colspan="2">Label 13-14</th>
+                        <th colspan="2">Label 15-16</th>
+                        <th colspan="2">Label 17-18</th>
+                        <th colspan="2">Label 19-20</th>
+                        <th colspan="2">Label 21-22</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas -->
+                    <tr>
+                        <th>Row 1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 3</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 5</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 6</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 7</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Row 8</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>IPA Symbols</h2>
+            <table class="ipa-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">CLICKS, VOICED IMPLOSIVES & EJECTIVES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="roxo">ʘ Bilabial</td>
+                        <td class="branco">ɓ Bilabial</td>
+                        <td class="roxo">pʼ Bilabial</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ǀ Dental</td>
+                        <td class="branco">ɗ Dental/alveolar</td>
+                        <td class="roxo">tʼ Dental/alveolar</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ǃ (Post)alveolar</td>
+                        <td class="branco">ʄ Palatal</td>
+                        <td class="roxo">kʼ Velar</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ǂ Palatoalveolar</td>
+                        <td class="branco">ɠ Velar</td>
+                        <td class="roxo">sʼ Alveolar fricative</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ǁ Alveolar lateral</td>
+                        <td class="branco">ʛ Uvular</td>
+                        <td class="roxo">ʼetc…</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="ipa-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">OTHER SYMBOLS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="roxo">ʍ Voiceless labial-velar fricative</td>
+                        <td class="branco">w Voiced labial-velar approximant</td>
+                        <td class="roxo">ɥ Voiced labial-palatal approximant</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ʜ Voiceless epiglottal fricative</td>
+                        <td class="branco">ʢ Voiced epiglottal fricative</td>
+                        <td class="roxo">ʡ Epiglottal plosive</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ɕ Voiceless alveolo-palatal fricative</td>
+                        <td class="branco">ʑ Voiced alveolo-palatal fricative</td>
+                        <td class="roxo">ɺ Alveolar lateral flap</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ɧ Simultaneous ʃ and x</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="ipa-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">AFFRICATES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="roxo">t͡s Voiceless alveolar affricate</td>
+                        <td class="branco">t͡ʃ Voiceless palato-alveolar affricate</td>
+                        <td class="roxo">t͡ɕ Voiceless alveolo-palatal affricate</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">ʈ͡ʂ Voiceless retroflex affricate</td>
+                        <td class="branco">d͡z Voiced alveolar affricate</td>
+                        <td class="roxo">d͡ʒ Voiced post-alveolar affricate</td>
+                    </tr>
+                    <tr>
+                        <td class="roxo">d͡ʑ Voiced alveolo-palatal affricate</td>
+                        <td class="branco">ɖ͡ʐ Voiceless retroflex affricate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 MeuSite. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="#privacy">Política de Privacidade</a></li>
+            <li><a href="#terms">Termos de Uso</a></li>
+        </ul>
+    </footer>
+    <script>
+        function playSound(soundName) {
+            const audio = new Audio(`${soundName}.mp3`);
+            audio.play().catch(err => console.error(`Error playing sound: ${err}`));
+        }
+    </script>
+
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });</script>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Fonema</h2>
+            <p id="modal-description">Informações sobre o fonema aparecerão aqui.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

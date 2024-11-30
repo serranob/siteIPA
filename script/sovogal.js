@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animationSubmenu.style.display = "none";
 
     // Captura o símbolo atual clicado (atualiza dinamicamente no evento)
-    const symbolContent = symbol.querySelector(".ipa-symbol");
-    const symbolText = symbolContent ? symbolContent.textContent.trim() : ""; // Garante que estamos pegando o texto dentro do .ipa-symbol
+    const symbolText = symbol.textContent.trim(); // Pega o texto diretamente do símbolo
     clickedSymbol.textContent = symbolText;
 
     // Passa referência do som associado (se necessário)

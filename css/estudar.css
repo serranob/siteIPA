@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background: linear-gradient(135deg, #f4e1f4, #f9e3f6, #f1e6f7); /* Fundo mais claro */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +21,7 @@ body {
     background-color: #ffffffdd;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
     text-align: center;
@@ -30,7 +31,7 @@ body {
 header h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #6a4c9c;
 }
 
 /* Flashcard */
@@ -69,22 +70,22 @@ header h1 {
     font-weight: bold;
     color: #fff;
     transition: opacity 0.1s ease-in-out;
-
 }
 
+/* Cartões com maior contraste entre si */
 .flashcard-front {
-    background-color: #4caf50;
+    background-color: #7b61a3; /* Tom de roxo mais forte */
 }
 
 .flashcard-back {
-    background-color: #f44336;
+    background-color: #d1a1d1; /* Tom de roxo mais claro */
     transform: rotateY(180deg);
 }
 
 /* Buttons */
 .action-btn {
     padding: 12px 20px;
-    background-color: #2196f3;
+    background-color: #2196f3; /* Azul mais vibrante */
     color: white;
     border: none;
     border-radius: 6px;
@@ -96,10 +97,11 @@ header h1 {
 }
 
 .action-btn:hover {
-    background-color: #1976d2;
+    background-color: #1976d2; /* Azul mais escuro */
     transform: scale(1.05);
 }
 
+/* Controls */
 .study-controls {
     display: flex;
     justify-content: space-between;
@@ -107,7 +109,7 @@ header h1 {
 }
 
 .back-button {
-    background-color: #ff5722;
+    background-color: #2196f3; /* Azul claro */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -118,11 +120,65 @@ header h1 {
 }
 
 .back-button:hover {
-    background-color: #e64a19;
+    background-color: #1976d2; /* Azul mais escuro */
 }
+
+/* Study List Title */
 #studyListTitle {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px; /* Para dar um espaçamento */
+    margin-top: 20px;
     text-align: center;
+    color: #6a4c9c;
+}
+
+/* IPA Table Styles */
+.ipa-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ipa-table caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6a4c9c;
+    margin-bottom: 10px;
+}
+
+.ipa-table th,
+.ipa-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.ipa-table th {
+    background-color: #6a4c9c;
+    color: white;
+}
+
+.ipa-table td {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.ipa-table td.interactive {
+    cursor: pointer;
+}
+
+.ipa-table td:hover {
+    background-color: #e0e0e0;
+}
+
+/* Highlighted symbols */
+.ipa-symbol {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a4c9c;
+}
+
+.symbol {
+    font-size: 1.5rem;
+    color: #9b68a5;
 }

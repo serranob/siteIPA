@@ -37,7 +37,7 @@ header h1 {
 
 .action-btn {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #d1a1d1;
     color: white;
     border: none;
     border-radius: 4px;
@@ -46,7 +46,7 @@ header h1 {
 }
 
 .action-btn:hover {
-    background-color: #45a049;
+    background-color: #d1a1d1;
 }
 
 .flashcard-list h2 {
@@ -78,7 +78,7 @@ header h1 {
 
 .flashcard-item button {
     padding: 5px 10px;
-    background-color: #ff9800;
+    background-color: #ffbb55;
     color: white;
     border: none;
     border-radius: 4px;
@@ -122,7 +122,7 @@ header h1 {
 
 .modal-content button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #d1a1d1;
     color: white;
     border: none;
     border-radius: 4px;
@@ -131,7 +131,7 @@ header h1 {
 
 /* Estilo para o botão de voltar */
 .back-button {
-    background-color: #4CAF50;
+    background-color: #d1a1d1;
     color: white;
     border: none;
     padding: 10px 20px;

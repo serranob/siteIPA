@@ -78,7 +78,7 @@ h2 {
 }
 
 .add-list {
-    background-color: #4CAF50;
+    background-color: #d1a1d1;
     color: white;
     font-size: 24px;
     display: flex;
@@ -145,7 +145,7 @@ h2 {
 
 .modal-content button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #d1a1d1;
     color: white;
     border: none;
     border-radius: 4px;
@@ -154,7 +154,7 @@ h2 {
 }
 
 .modal-content button:hover {
-    background-color: #45a049;
+    background-color: #d1a1d1;
 }
 
 /* Responsividade para dispositivos menores */
